@@ -3,8 +3,8 @@
     padding: 0;
 }
 .taustakuva {
-    background-image: url(/kuvat/rako.jpeg);
-    background-size: cover;
+    background-image: url(kuvat/rako.jpeg);
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: bottom 70% left;
     height: 100vh;
