@@ -4,7 +4,7 @@
 }
 .taustakuva {
     background-image: url(kuvat/rako.jpeg);
-    background-size: cover;
+    background-size: cover; 
     background-repeat: no-repeat;
     background-position: bottom 70% left;
     height: 100vh;
@@ -29,6 +29,10 @@
 .tuomasrahikka span {
     font-size: 1.1em;
 }
-.tuomasrahikka tuomas {
-    color: red;
+.tuomasrahikka a {
+    text-decoration: none;
+    color: #2E2F30;
+}
+.tuomasrahikka a:visited, a:active, a:hover {
+    color: #2E2F30;
 }
