@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.taustakuva {
+    background-image: url(/kuvat/rako.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom 70% left;
+    height: 100vh;
+}
+.tuomasrahikka {
+    position: fixed;
+    left: 44%;
+    top: 7%;
+    color: #2E2F30;
+    @font-face {
+        font-family: futura;
+        src: url(/Users/tuomasrahikka/Documents/Visual Studio Code/Verkkosivujen kehittäminen kurssi/Tuomaksen kotisivuprojekti/CSS/tyylit.css);
+    }
+    font-family: futura;
+    font-style: italic;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    font-size: 30pt;
+    line-height: 1.25em;
+}
+.tuomasrahikka span {
+    font-size: 1.1em;
+}
+.tuomasrahikka tuomas {
+    color: red;
+}
