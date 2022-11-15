@@ -68,6 +68,41 @@ flex-grow: 2;
     justify-content: center;
 }
 
+
+
+/* ABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUT */
+.section-container {
+    /* TYYLI */    
+    font-family: 'Hina Mincho';
+    color: #5e5e5e;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.142em;
+    /* FLEX */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+    flex-flow: column;
+}
+.section-container p {
+    max-width: 50%;
+}
+.pimio {
+    position: relative;
+    right: 20%;
+    top: 5%;
+}
+.rollei {
+    position: relative;
+    bottom: 476px;
+    left: 240px;
+}
+
 footer {
     display: flex;
     justify-content: center;
