@@ -1,61 +1,75 @@
-/* * {
-    margin: 0;
-    padding: 0;
+div.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0%;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 
-} */
+/* Päänavigaatio tyyli */
+.menu {
+        /* TYYLI */
+        
+    font-family: 'Hina Mincho';
+    font-style: normal;
+    font-size: 22px;
+    letter-spacing: 0.142em;
+    color: rgba(0, 0, 0, 0.77);
+    list-style-type: none;
+    /* FLEX */
+    flex-grow: 1;
+    text-align: center;
+    }
+.menu a {
+    text-decoration: none;
 
-/* TUOMAS RAHIKKA */
-.tuomasrahikka {
+}
+.menu a:visited {
+    color: inherit;
+}
+.menu a:hover {
+    color: inherit;
+}
+.menu a:focus {
+    color: inherit;
+}
+.menu a:active {
+    color: inherit;
+}
 
-position: absolute;
-margin: auto;
-left: 41%;
-top: 5%;
-/* display: block; */
 
+
+
+
+
+/* TUOMAS RAHIKKA tyyli */
+.three {
+    /* TYYLI */
 @font-face {
     font-family: Playfair Display SC;
-    src: url(/Users/tuomasrahikka/Documents/Visual Studio Code/Verkkosivujen kehittäminen kurssi/Tuomaksen kotisivuprojekti/CSS/tyylit.css);
-}
+    src: url(/Users/tuomasrahikka/Documents/Visual Studio Code/Verkkosivujen kehittäminen kurssi/Tuomaksen kotisivuprojekti/CSS/tyylit.css); }
 font-family: Playfair Display SC;
 font-style: normal;
 font-weight: 600;
 font-size: 35px;
-line-height: 47px;
 letter-spacing: -0.04em;
-
 color: #000000;
+/* FLEX */
+position: relative;
+bottom: 4px;
+flex-grow: 2;
 }
 
-/* Pää navigaatiovalikko */
-
-.mainnav ul {
+.slideshow-container {
     display: flex;
-    flex-direction: row;
-    width: 25%;
-    text-align: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-}
-.mainnav li {
-font-family: 'Hina Mincho';
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 32px;
-letter-spacing: 0.142em;
-color: rgba(0, 0, 0, 0.77);
-list-style-type: none;
-}
-.slideshow {
-    /* display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 62%;
-    position: absolute;
-    left: 22%; 
-    top: 12%; */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1%
 }
