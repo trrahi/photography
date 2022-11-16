@@ -1,12 +1,13 @@
 div.wrapper {
     width: 90%;
     margin: 0 auto;
-    margin-top: 0%;
+    margin-top: 3%;
 }
 .flex-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 /* Päänavigaatio tyyli */
@@ -82,44 +83,67 @@ flex-grow: 2;
 
 
 /* ABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUT */
-.section-container {
-    /* TYYLI */    
+.section-container p {
     @font-face {
         font-family: futura;
         src: url(/Users/tuomasrahikka/Documents/Visual Studio Code/Verkkosivujen kehittäminen kurssi/Tuomaksen kotisivuprojekti/CSS/tyylit.css); }
     font-family: futura;
     color: #5e5e5e;
     font-style: normal;
-    /* text-transform: lowercase; */
     font-size: 20px;
     font-weight:100;
     line-height: 35px;
     text-align: center;
     letter-spacing: 0.0em;
-    /* FLEX */
+}
+.section-container {
     display: flex;
-    /* justify-content: center; */
-    align-items: center;
-    width: 70%;
+    flex-wrap: wrap;
+    justify-content:center;
+    width: 80%;
     margin: 0 auto;
-    flex-flow: column;
+    align-items: center;
 }
-.section-container p {
-    max-width: 50%;
+
+.section-container img.pimio {
+    max-width: 470px;
+    object-fit:contain;
+    display: block;
 }
-.pimio {
-    position: relative;
-    right: 20%;
-    top: 5%;
+.section-container img.rollei {
+    max-width: 258px;
+    object-fit: contain;
 }
-.rollei {
-    position: relative;
-    bottom: 476px;
-    left: 240px;
+.section-container img {
+    margin: 2%;
+}
+.pimio-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
+    justify-content: flex-start;
+    margin: 1%;
+}
+
+p.kuvateksti-pimio {
+    margin-top: 0px;
+    padding-left: 2%;
+}
+.rollei-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    justify-content: flex-start;
+    margin: 1%;
+}
+
+p.kuvateksti-rollei {
+    margin-top: 0px;
+    padding-left: 2%;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    display: none;
 }
