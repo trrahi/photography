@@ -1,3 +1,4 @@
+/* PÄÄVALIKOPÄÄVALIKOPÄÄVALIKOPÄÄVALIKOPÄÄVALIKO */
 div.wrapper {
     width: 90%;
     margin: 0 auto;
@@ -52,11 +53,6 @@ div.wrapper {
     color: inherit;
 }
 
-
-
-
-
-
 /* TUOMAS RAHIKKA tyyli */
 .three {
     /* TYYLI */
@@ -79,6 +75,21 @@ flex-grow: 2;
     display: flex;
     justify-content: center;
 }
+
+/* IMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGES */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -125,7 +136,7 @@ flex-grow: 2;
 .kuvateksti-container {
     display: flex;
     width: 60%;
-    justify-content:flex-start
+    justify-content:flex-start;
     flex-direction: row-reverse;
 }
 .kuvateksti-container p {
@@ -134,19 +145,12 @@ flex-grow: 2;
 p.kuvateksti-pimio {
     margin-top: 0px;
     flex-grow: 1;
-    position: relative;
-    left: 10%;
 }
 
 p.kuvateksti-rollei {
-    flex-grow: 2;
+    flex-grow: 1;
 
    margin-top: 0px;
-}
-
-footer {
-    display: flex;
-    justify-content: center;
 }
 @media screen and (max-width: 800px) { 
     .menu {
@@ -181,4 +185,10 @@ footer {
         justify-content: center;
         margin-top: 10%;
     }
+}
+
+/* FOOTERFOOTERFOOTERFOOTERFOOTERFOOTER */
+footer {
+    display: flex;
+    justify-content: center;
 }
