@@ -84,6 +84,7 @@ letter-spacing: 0.09em;
 color: #000000;
 }
 
+/* ETUSIVU */
 
 /* IMAGES */
 
@@ -221,10 +222,10 @@ p.kuvateksti-rollei {
 }
 
 /* FOOTERFOOTERFOOTERFOOTER */
-img.ig-desktop {
+/* img.ig-desktop {
     justify-items: center;
     margin-top: 10%;
-    grid-column: 2 / 3;
+    grid-column: 2 / 3; */
 }
 @media (max-width: 800px) {
     img.ig-desktop {
@@ -235,10 +236,12 @@ img.ig-desktop {
     img.ig-mobile {
         display:none;
     }
+    img.ig-desktop {
+        position:relative;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
-
-.slideshow-container {
-    display: flex;
-    justify-content: center;
+.ig {
+    display: none;
 }
-
