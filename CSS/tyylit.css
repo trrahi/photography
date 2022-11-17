@@ -1,4 +1,5 @@
-/* PÄÄVALIKOPÄÄVALIKOPÄÄVALIKOPÄÄVALIKOPÄÄVALIKO */
+/* GLOBAL ADJUSTMENTS GLOBAL ADJUSTMENTS GLOBAL ADJUSTMENTS  */
+/* PÄÄVALIKKO */
 div.wrapper {
     width: 90%;
     margin: 0 auto;
@@ -8,10 +9,28 @@ div.wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
+.three {
+    position: relative;
+    bottom: 4px;
+    flex-grow: 2;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .flex-container {
+        flex-direction: column;
+        padding: 0;
+        flex-wrap: wrap;
+    }
+    .one {order: 2;}
+    .two {order: 3;}
+    .three {order: 1;}
+    .four {order: 4;}
+    .five{order: 5;}
 
 }
 
-/* Päänavigaatio tyyli */
+/* TYYLI-PÄÄVALIKKO */
 .menu {
         /* TYYLI */
         
@@ -51,7 +70,7 @@ div.wrapper {
     color: inherit;
 }
 
-/* TUOMAS RAHIKKA tyyli */
+/* TYYLI-TUOMASRAHIKKA */
 .three {
     /* TYYLI */
 @font-face {
@@ -63,23 +82,14 @@ font-weight: 600;
 font-size: 35px;
 letter-spacing: 0.09em;
 color: #000000;
-/* FLEX */
-position: relative;
-bottom: 4px;
-flex-grow: 2;
 }
 
-.slideshow-container {
-    display: flex;
-    justify-content: center;
-}
 
-/* IMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGES */
+/* IMAGES */
 
 div.main-gallery-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 4%;
     width: 90%;
     margin: 0 auto;
@@ -132,22 +142,25 @@ div.main-gallery-container {
     text-align: center;
     margin-top: 0;
 }
+@media (max-width: 800px) {
+    div.main-gallery-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1%;
+    }
+    .walls-teksti {
+        grid-row: 2 / 3;
+    }
+    .traces-teksti {
+        grid-row: 4 / 5;
+    }
+    .notice-teksti {
+        grid-row: 6 / 7;
+    }
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUTABOUT */
+/* ABOUT */
 .section-container p {
     @font-face {
         font-family: futura;
@@ -206,44 +219,26 @@ p.kuvateksti-rollei {
 
    margin-top: 0px;
 }
-@media screen and (max-width: 800px) { 
-    .menu {
-        color: red;
+
+/* FOOTERFOOTERFOOTERFOOTER */
+img.ig-desktop {
+    justify-items: center;
+    margin-top: 10%;
+    grid-column: 2 / 3;
+}
+@media (max-width: 800px) {
+    img.ig-desktop {
+        display:none;
     }
-    .flex-container {
-        flex-direction: column-reverse;
-    }
-    .three {order: 1}
-    .section-container img.pimio {
-        flex: 1 1 100px;
-        max-width: 370px;
-        object-fit:contain;
-        display: block;
-        margin-bottom: 13%;
-    }
-    p.kuvateksti-pimio {
-        margin-top: 0px;
-        flex-grow: 1;
-        position: relative;
-        left: %;
-        bottom: 200px;
-        display: none;
-    }
-    p.kuvateksti-rollei {
-        flex-grow: 2;
-        display: none;
-       margin-top: 0px;
-    }
-    footer {
-        display: flex;
-        justify-content: center;
-        margin-top: 10%;
+}
+@media (min-width: 800px) {
+    img.ig-mobile {
+        display:none;
     }
 }
 
-/* FOOTERFOOTERFOOTERFOOTERFOOTERFOOTER */
-footer {
+.slideshow-container {
+    display: flex;
     justify-content: center;
-    grid-column: 2 / 3;
-    margin-top: 20%;
 }
+
