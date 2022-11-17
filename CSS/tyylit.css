@@ -15,21 +15,19 @@ div.wrapper {
 .menu {
         /* TYYLI */
         
-        @font-face {
+    @font-face {
             font-family: futura;
             src: url(/Users/tuomasrahikka/Documents/Visual Studio Code/Verkkosivujen kehittäminen kurssi/Tuomaksen kotisivuprojekti/CSS/tyylit.css); }
-        font-family: futura;
-        color: #5e5e5e;
-        font-style: normal;
-        text-transform: uppercase;
-        font-size: 14px;
-    
-        line-height: 44px;
-        text-align: center;
-        letter-spacing: 0.200em;
+    font-family: futura;
+    color: #5e5e5e;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 44px;
+    text-align: center;
+    letter-spacing: 0.200em;
     font-style: normal;
     letter-spacing: 0.142em;
-    color: rgba(0, 0, 0, 0.77);
     list-style-type: none;
     /* FLEX */
     flex-grow: 1;
@@ -77,6 +75,30 @@ flex-grow: 2;
 }
 
 /* IMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGESIMAGES */
+
+.galleries {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 2%;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+}
+.galleries img {
+    max-width: 380px;
+    max-width: ;
+}
+.galleries h1 {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+#walls-flex-container {
+    background-image: url('C');
+}
+
 
 
 
