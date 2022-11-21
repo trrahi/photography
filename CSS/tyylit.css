@@ -9,25 +9,24 @@ div.wrapper {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
 .three {
     position: relative;
     bottom: 4px;
     flex-grow: 2;
-    }
-
 }
 @media screen and (max-width: 800px) {
     .flex-container {
         flex-direction: column;
         padding: 0;
         flex-wrap: wrap;
+        margin-top: 7%;
     }
     .one {order: 2;}
     .two {order: 3;}
     .three {order: 1;}
     .four {order: 4;}
     .five{order: 5;}
-
 }
 
 /* TYYLI-PÄÄVALIKKO */
@@ -62,7 +61,7 @@ div.wrapper {
 }
 .menu a:hover {
     color: inherit;
-}m
+}
 .menu a:focus {
     color: inherit;
 }
@@ -88,10 +87,20 @@ color: #000000;
         margin-bottom: 4%;
     }
 }
-/* VIIVA "TUOMAS RAHIKKA" JÄLKEEN */
 
 /* ETUSIVU */
 
+.carousel-item img {
+    object-fit: cover;
+    aspect-ratio: 5.5 / 4;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+@media screen and (max-width: 800px) {
+    .carousel-item img {
+        width: 85% !important;
+    }
+}
 /* IMAGES */
 
 div.main-gallery-container {
@@ -337,8 +346,8 @@ div.hr-div {
 /* img.ig-desktop {
     justify-items: center;
     margin-top: 10%;
-    grid-column: 2 / 3; */
-}
+    grid-column: 2 / 3;
+} */
 @media (max-width: 800px) {
     img.ig-desktop {
         display:none;
