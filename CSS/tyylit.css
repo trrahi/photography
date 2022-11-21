@@ -83,6 +83,12 @@ font-size: 35px;
 letter-spacing: 0.09em;
 color: #000000;
 }
+@media screen and (max-width: 800px) {
+    .three {
+        margin-bottom: 4%;
+    }
+}
+/* VIIVA "TUOMAS RAHIKKA" JÄLKEEN */
 
 /* ETUSIVU */
 
@@ -292,7 +298,40 @@ p.about-teksti {
     font-family: futura;
     /* text-transform: uppercase; */
 }
-.about
+
+
+/* CONTACT */
+label, p, button, h3, h6 {
+    @font-face {
+        font-family: futura;
+        src: url(/Users/tuomasrahikka/Documents/Visual Studio Code/Verkkosivujen kehittäminen kurssi/Tuomaksen kotisivuprojekti/CSS/tyylit.css); }
+    font-family: futura;
+    text-align: center;
+}
+div.container-lg {
+    position:relative;
+    top:50px;
+}
+div.hr-div {
+    background-color: black;
+    height:1px;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 12%;
+    left: 16%;
+}
+@media (max-width: 800px) {
+    section#contact {
+        position: relative;
+        bottom: 40px;
+    }
+    div.hr-div {
+        display: none;
+    }
+}
+
 
 /* FOOTERFOOTERFOOTERFOOTER */
 /* img.ig-desktop {
