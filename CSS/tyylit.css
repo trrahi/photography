@@ -503,9 +503,27 @@ div.ig-container {
     grid-column: 7 / 8;
     grid-row: 3 / 4;
 }
+
+
 @media (max-width: 800px) {
     .contact-ig-container-item {
         grid-column: 7 / 8;
         grid-row: 2 / 3;
     }
+    .index-ig-container-item {
+        display:block;
+        grid-column: 7 / 8;
+        grid-row: 3 / 4;
+    }
+    .index-ig-container-item {
+        display:block;
+        grid-column: 7 / 8;
+        grid-row: 2 / 3;
+    }
 }
+@media (min-width: 800px) {
+    .index-ig-container-item {
+        display:none;
+    }
+}
+
