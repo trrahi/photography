@@ -2,7 +2,6 @@
 * {
     -webkit-font-smoothing: antialiased;
 }
-
 body {
     width: 100%;
     margin: 0;
@@ -89,6 +88,7 @@ div.wrapper {
 }
 .menu:hover a:hover {
     color: black;
+    cursor: pointer;
 }
 
 /* TYYLI-TUOMASRAHIKKA */
@@ -193,6 +193,19 @@ div.main-gallery-container {
     .notice-teksti {
         grid-row: 6 / 7;
     }
+}
+
+/* GALLERIES UNDER CONSTURCTION */
+.uusiakoteja {
+    grid-column: 4 / 11;
+    grid-row: 4/ 5;
+    aspect-ratio: 11/8;
+    width: 100%;
+    object-fit: cover;
+}
+.gallries-ig-icon {
+    grid-column: 7/8;
+    grid-row: 6/7;
 }
 /* SHOP  */
 .shop-grid {
