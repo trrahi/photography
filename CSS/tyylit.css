@@ -211,6 +211,7 @@ div.main-gallery-container {
     font-family: jost;
     font-weight: 600;
     color: #3e3e3e;
+    font-size: 1.2em;
     grid-column: 2 / 8;
     grid-row: 1 / 2;
     align-self: center;
@@ -322,6 +323,7 @@ div.main-gallery-container {
     width: 70%;
     margin: 0 auto;
     column-gap: 2%;
+    row-gap: 1%;
     justify-self: center;
     text-align: center;
     position: relative;
@@ -376,12 +378,12 @@ p.about-teksti {
     .section-grid {
         display:grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(12, 4rem);
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
-        grid-gap: 2%;
+        row-gap: 1%;
         justify-self: center;
         text-align: center;
+        margin-top: 7%;
     }  
     p.about-teksti {
         grid-column: 1 / 13;
@@ -394,39 +396,38 @@ p.about-teksti {
         letter-spacing: 0.02em;
         margin: 0;
         padding: 0;
+        margin-bottom: 10%;
     }
     .pimio {
-        grid-column: 2 / 12;
-        grid-row: 4 / 7;
+        grid-column: 1 / 13;
+        grid-row: 3 / 5 ;
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
     .rollei {
-        grid-column: 2 / 12;
-        grid-row: 8 / 12;
+        grid-column: 1 / 13;
+        grid-row: 6 / 7;
         width: 80%;
         height: 100%; 
         object-fit: cover;
         justify-self: center;
-        transform: translate(0%, -20%);
+        /* margin-top:5%; */
     }
     .kuvateksti-pimio {
-        grid-column: 2 / 11;
+        grid-column: 1 / 13;
+        grid-row: 5 / 6;
+        padding: 0;
+        margin: 0;
+        justify-self: center;
+        font-size: 14px;
+    }
+    .kuvateksti-rollei {
+        grid-column: 1/ 13;
         grid-row: 7 / 8;
         padding: 0;
         margin: 0;
         justify-self: center;
-        transform: translate(9%, -20%);
-        font-size: 14px;
-    }
-    .kuvateksti-rollei {
-        grid-column: 1/ 12;
-        grid-row: 11 / 12;
-        padding: 0;
-        margin: 0;
-        justify-self: center;
-        transform: translate(14%, 16%);
         font-size: 14px;
     }
 }
