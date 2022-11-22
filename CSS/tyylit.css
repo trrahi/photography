@@ -1,4 +1,8 @@
 /* GLOBAL ADJUSTMENTS GLOBAL ADJUSTMENTS GLOBAL ADJUSTMENTS  */
+* {
+    -webkit-font-smoothing: antialiased;
+}
+
 body {
     width: 100%;
     margin: 0;
@@ -17,6 +21,7 @@ body {
         font-family: Jost;
         src: url(Fontit/Jost-VariableFont_wght.ttf);
         font-weigth: medium bold thin light;
+        font-weight: 1 999;
     }
     /* LEAGUESPARTAN */
     @font-face {
@@ -65,13 +70,13 @@ div.wrapper {
 /* TYYLI-PÄÄVALIKKO */
 .menu {
     font-family: Jost;
-    font-weight: 600;
+    font-weight: 600 !important;
     color: #5e5e5e;
     text-transform: uppercase;
     font-size: 15px;
     text-align: center;
     line-height: 44px;
-    letter-spacing: 0.230em;
+    letter-spacing: 0.330em;
     list-style-type: none;
     }
 .menu a {
