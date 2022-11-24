@@ -1,7 +1,4 @@
 /* GLOBAL ADJUSTMENTS GLOBAL ADJUSTMENTS GLOBAL ADJUSTMENTS  */
-* {
-    -webkit-font-smoothing: antialiased;
-}
 body {
     width: 100%;
     margin: 0;
@@ -13,20 +10,19 @@ body {
     @font-face {
         font-family: Playfair;
         src: url(Fontit/PlayfairDisplaySC-Regular.ttf);
-        font-weigth: medium bold thin light;
+        font-weight: 1 999;
     }
     /* JOST */
     @font-face {
         font-family: Jost;
         src: url(Fontit/Jost-VariableFont_wght.ttf);
-        font-weigth: medium bold thin light;
         font-weight: 1 999;
     }
     /* LEAGUESPARTAN */
     @font-face {
         font-family: LeagueSpartan;
         src: url(Fontit/LeagueSpartan-VariableFont_wght.ttf);
-        font-weight: bold thin medium light;
+        font-weight: 1 999;
     }
 
 /* PÄÄVALIKKO */
@@ -144,6 +140,7 @@ div.main-gallery-container {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    filter: brightness(0.9);
 }
 .gallery-item .image img {
     width: 100%;
@@ -219,7 +216,7 @@ div.main-gallery-container {
     height: 100%;
     object-fit:cover;
     overflow: hidden;
-    object-position: 50%, 50%;
+    object-position: 50% 50%;
 }
 .shop-kuvateksti {
     font-family: jost;
@@ -337,8 +334,6 @@ div.main-gallery-container {
     }
 }
 
-
-
 /* ABOUT */
 .section-grid {
     display:grid;
@@ -365,6 +360,10 @@ p.about-teksti {
     margin-top:5%;
 
 }
+.container--narrow {
+    max-width: 40rem;
+    justify-self: center;
+}
 .pimio {
     grid-column: 3 / 9;
     grid-row: 4 / 10;
@@ -378,7 +377,6 @@ p.about-teksti {
     width: 100%;
     height: 100%; 
     object-fit: cover;
-    transform: translate(50% 50%);
 }
 .kuvateksti-about {
     font-family: jost;
