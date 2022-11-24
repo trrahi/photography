@@ -51,12 +51,13 @@ div.wrapper {
     flex-grow: 1;
     text-align: center;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 45rem) {
     .flex-container {
         flex-direction: column;
         padding: 0;
         flex-wrap: wrap;
         margin-top: 10%;
+        width: 50%;
     }
     
     .one {order: 2;}
@@ -83,24 +84,21 @@ div.wrapper {
     color: #5e5e5e;
 
 }
-.menu a:visited {
-    color: inherit;
-}
 .menu:hover a:hover {
     color: black;
     cursor: pointer;
 }
 
 /* TYYLI-TUOMASRAHIKKA */
-.three {
+.three a {
     font-family: playfair;
     font-style: normal;
     font-weight: 600;
     font-size: 35px;
     letter-spacing: 0.18em;
-    color: #000000;
+    color: black;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 45rem) {
     .three {
         margin-bottom: 4%;
     }
@@ -115,11 +113,11 @@ div.wrapper {
     object-fit: cover;
     aspect-ratio: 11 / 8;
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 3rem;
     position: relative;
-    right: 0.6%;
+    right: .5rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 45rem) {
     .carousel-item img {
         width: 85% !important;
         margin-top: 8%;
@@ -178,7 +176,7 @@ div.main-gallery-container {
     font-family: Jost;
     font-weight: 500;
 }
-@media (max-width: 800px) {
+@media (max-width: 45rem) {
     div.main-gallery-container {
         display: grid;
         grid-template-columns: 1fr;
@@ -211,7 +209,6 @@ div.main-gallery-container {
 .shop-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, minmax(10px, auto));
     width: 80%;
     margin: 0 auto;
     text-align: center;
@@ -286,11 +283,10 @@ div.main-gallery-container {
     grid-column: 5 / 8;
     grid-row: 5 / 6;
 }
-@media (max-width: 800px) {
+@media (max-width: 45rem) {
     .shop-grid {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(12, minmax(50px, auto));
         width: 100%;
         margin: 0 auto;
         text-align: center;
@@ -404,7 +400,7 @@ p.about-teksti {
     margin: 0;
     justify-self: center;
 }
-@media (max-width: 800px) {
+@media (max-width: 45rem) {
     .section-grid {
         display:grid;
         grid-template-columns: repeat(12, 1fr);
@@ -483,7 +479,7 @@ div.hr-div {
     grid-column: 3 / 12;
     grid-row: 1 / 2;
 }
-@media (max-width: 800px) {
+@media (max-width: 45rem) {
     section#contact {
         position: relative;
         bottom: 40px;
@@ -505,46 +501,61 @@ div.hr-div {
 div.ig-container {
     display:grid;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(3, minmax(20px, 1fr));
     justify-items: center;
     align-items: center;
+    padding-top: 2rem;
+
 }
 .images-ig-container-item {
     grid-column: 7 / 8;
-    grid-row: 3 / 4;
+    padding: 5rem;
 }
 .about-ig-container-item {
     grid-column: 7 / 8;
-    grid-row: 3 / 4;
+    margin: 4rem;
 }
 .shop-ig-container-item {
     grid-column: 7 / 8;
-    grid-row: 1 / 2;
+    margin: 5rem;
 }
 .contact-ig-container-item {
     grid-column: 7 / 8;
-    grid-row: 3 / 4;
+    padding: 4rem;
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 45rem) {
+    div.ig-container {
+        display:grid;
+        grid-template-columns: repeat(13, 1fr);
+        justify-items: center;
+        align-items: center;
+        padding: 0;
+    }
     .contact-ig-container-item {
         grid-column: 7 / 8;
-        grid-row: 2 / 3;
+        margin: 1rem;
+        padding: .5rem;
     }
     .index-ig-container-item {
         display:block;
         grid-column: 7 / 8;
-        grid-row: 2 / 3;
+        margin: 3rem;
     }
-    div.ig-container {
-        position: relative;
-        botto
+    .shop-ig-container-item {
+        grid-column: 7 / 8;
+        /* padding: 2rem; */
     }
+    .about-ig-container-item {
+        grid-column: 7 / 8;
+        margin: 9rem;
+    }
+
 }
-@media (min-width: 800px) {
+@media (min-width: 45rem) {
     .index-ig-container-item {
-        display:none;
+        grid-column: 7/8;
+
     }
 }
 
